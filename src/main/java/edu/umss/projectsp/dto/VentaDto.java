@@ -11,7 +11,6 @@ import edu.umss.projectsp.model.Venta;
 import java.sql.Timestamp;
 
 public class VentaDto extends DtoBase<Venta> {
-
     private Integer nroTransaccion;
     private Timestamp fecha;
     private String concepto;

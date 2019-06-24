@@ -22,6 +22,7 @@ public class Producto extends ModelBase<ProductoDto> {
     @ManyToOne(optional = false)
     private Persona persona;
 
+
     public String getCodigoProducto() {
         return codigoProducto;
     }

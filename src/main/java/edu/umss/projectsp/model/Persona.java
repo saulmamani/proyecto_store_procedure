@@ -19,7 +19,6 @@ public class Persona extends ModelBase<PersonaDto> {
     private Date fechaNacimiento;
 
 
-
     public String getCi() {
         return ci;
     }
