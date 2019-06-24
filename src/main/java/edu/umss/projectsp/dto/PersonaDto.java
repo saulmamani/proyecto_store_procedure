@@ -1,24 +1,21 @@
 /**
  * @author: Saul Mamani M.
- * 2019
+ * 24-06-19
  */
 
-package edu.umss.projectsp.model;
+package edu.umss.projectsp.dto;
 
-import edu.umss.projectsp.dto.PersonaDto;
+import edu.umss.projectsp.model.Persona;
 
-import javax.persistence.Entity;
 import java.util.Date;
 
-@Entity
-public class Persona extends ModelBase<PersonaDto> {
+public class PersonaDto extends DtoBase<Persona> {
     private String ci;
     private String nombre;
     private String apellido;
     private String celular;
     private Date fechaNacimiento;
-
-
+    private String direccion;
 
     public String getCi() {
         return ci;
@@ -58,5 +55,13 @@ public class Persona extends ModelBase<PersonaDto> {
 
     public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 }

@@ -1,23 +1,20 @@
 /**
  * @author: Saul Mamani M.
- * 2019
+ * 24-06-19
  */
 
-package edu.umss.projectsp.model;
+package edu.umss.projectsp.dto;
 
-import edu.umss.projectsp.dto.VentaDto;
+import edu.umss.projectsp.model.Persona;
+import edu.umss.projectsp.model.Venta;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import java.sql.Timestamp;
 
-@Entity
-public class Venta extends ModelBase<VentaDto> {
+public class VentaDto extends DtoBase<Venta> {
 
     private Integer nroTransaccion;
     private Timestamp fecha;
     private String concepto;
-    @ManyToOne(optional = false)
     private Persona persona;
 
     public Integer getNroTransaccion() {

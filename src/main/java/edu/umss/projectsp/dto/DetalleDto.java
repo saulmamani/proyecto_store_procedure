@@ -1,24 +1,21 @@
 /**
  * @author: Saul Mamani M.
- * 2019
+ * 24-06-19
  */
 
-package edu.umss.projectsp.model;
+package edu.umss.projectsp.dto;
 
-import edu.umss.projectsp.dto.DetalleDto;
+import edu.umss.projectsp.model.Detalle;
+import edu.umss.projectsp.model.Producto;
+import edu.umss.projectsp.model.Venta;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
 
-@Entity
-public class Detalle extends ModelBase<DetalleDto> {
+public class DetalleDto extends DtoBase<Detalle> {
     private Integer cantidad;
     private BigDecimal precio;
     private BigDecimal subTotal;
-    @ManyToOne(optional = false)
     private Venta venta;
-    @ManyToOne(optional = false)
     private Producto producto;
 
     public Integer getCantidad() {

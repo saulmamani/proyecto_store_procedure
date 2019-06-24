@@ -1,16 +1,14 @@
 /**
  * @author: Saul Mamani M.
- * 2019
+ * 24-06-19
  */
 
-package edu.umss.projectsp.model;
+package edu.umss.projectsp.dto;
 
-import edu.umss.projectsp.dto.ProveedorDto;
 
-import javax.persistence.Entity;
+import edu.umss.projectsp.model.Proveedor;
 
-@Entity
-public class Proveedor extends ModelBase<ProveedorDto> {
+public class ProveedorDto extends DtoBase<Proveedor> {
     private String nit;
     private String razonSocial;
     private String celular;
